@@ -1,0 +1,476 @@
+﻿<Project ToolsVersion="15.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props" Condition="Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" />
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{3DED6F2E-9F85-48F6-800B-C8484F28D779}</ProjectGuid>
+    <ProjectTypeGuids>{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Slideshow_like_Book_Cover</RootNamespace>
+    <AssemblyName>Slideshow_like_Book_Cover</AssemblyName>
+    <TargetFrameworkVersion>v4.7.2</TargetFrameworkVersion>
+    <UseIISExpress>true</UseIISExpress>
+    <Use64BitIISExpress />
+    <IISExpressSSLPort>44397</IISExpressSSLPort>
+    <IISExpressAnonymousAuthentication />
+    <IISExpressWindowsAuthentication />
+    <IISExpressUseClassicPipelineMode />
+    <UseGlobalApplicationHostFile />
+    <NuGetPackageImportStamp>
+    </NuGetPackageImportStamp>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+  </ItemGroup>
+  <ItemGroup>
+    <Reference Include="Microsoft.CodeDom.Providers.DotNetCompilerPlatform">
+      <HintPath>packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\lib\net45\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Images\1home.png" />
+    <Content Include="Images\3-steps.jpg" />
+    <Content Include="Images\Acknowledgement_New.jpg" />
+    <Content Include="Images\ack_new.png" />
+    <Content Include="Images\Alrtimg.jpg" />
+    <Content Include="Images\animatedEllipse.gif" />
+    <Content Include="Images\applicantselected.png" />
+    <Content Include="Images\apply_online123.jpg" />
+    <Content Include="Images\App_Image.png" />
+    <Content Include="Images\arrow.gif" />
+    <Content Include="Images\arrow.png" />
+    <Content Include="Images\arrow2.gif" />
+    <Content Include="Images\back.png" />
+    <Content Include="Images\backborder12345.jpg" />
+    <Content Include="Images\background.png" />
+    <Content Include="Images\backward.png" />
+    <Content Include="Images\back_green.png" />
+    <Content Include="Images\Back_New.jpg" />
+    <Content Include="Images\Back_New.png" />
+    <Content Include="Images\beach.png" />
+    <Content Include="Images\bg-adbox.png" />
+    <Content Include="Images\bg-adboxbottom.png" />
+    <Content Include="Images\bg-blue.png" />
+    <Content Include="Images\bg-body.jpg" />
+    <Content Include="Images\bg-box.png" />
+    <Content Include="Images\bg-boxborders.png" />
+    <Content Include="Images\bg-content-top.png" />
+    <Content Include="Images\bg-header.png" />
+    <Content Include="Images\bg-heading.png" />
+    <Content Include="Images\bg-pattern.jpg" />
+    <Content Include="Images\bg.jpg" />
+    <Content Include="Images\bg23.jpg" />
+    <Content Include="Images\bg5.jpg" />
+    <Content Include="Images\bgboxpink.jpg" />
+    <Content Include="Images\bgnew78.jpg" />
+    <Content Include="Images\bg_green.jpg" />
+    <Content Include="Images\bg_green1.jpg" />
+    <Content Include="Images\bg_green2.jpg" />
+    <Content Include="Images\bg_green3.png" />
+    <Content Include="Images\Blue-Background.jpg" />
+    <Content Include="Images\border.png" />
+    <Content Include="Images\border2.png" />
+    <Content Include="Images\border3.png" />
+    <Content Include="Images\border4.png" />
+    <Content Include="Images\boxfinal.png" />
+    <Content Include="Images\btn_calendar.gif" />
+    <Content Include="Images\Btn_ImageAcknoledgement.png" />
+    <Content Include="Images\Btn_ImageBack.png" />
+    <Content Include="Images\Btn_ImageChgPasswd.png" />
+    <Content Include="Images\Btn_ImageClose.png" />
+    <Content Include="Images\Btn_ImageEmail.png" />
+    <Content Include="Images\Btn_ImageLogout.png" />
+    <Content Include="Images\Btn_ImageNext.png" />
+    <Content Include="Images\Btn_ImageOk.png" />
+    <Content Include="Images\Btn_ImagePay.png" />
+    <Content Include="Images\Btn_ImagePrevious.png" />
+    <Content Include="Images\Btn_ImageProceed.png" />
+    <Content Include="Images\Btn_ImageReactivate.png" />
+    <Content Include="Images\Btn_ImageSMS.png" />
+    <Content Include="Images\Btn_ImageUpdate.png" />
+    <Content Include="Images\Btn_Image_Online.jpg" />
+    <Content Include="Images\building11.jpg" />
+    <Content Include="Images\building12.jpg" />
+    <Content Include="Images\building13.jpg" />
+    <Content Include="Images\building14.jpg" />
+    <Content Include="Images\building15.jpg" />
+    <Content Include="Images\building16.jpg" />
+    <Content Include="Images\building17.jpg" />
+    <Content Include="Images\building18.jpg" />
+    <Content Include="Images\building19.jpg" />
+    <Content Include="Images\building20.jpg" />
+    <Content Include="Images\building21.jpg" />
+    <Content Include="Images\building22.jpg" />
+    <Content Include="Images\building31.jpg" />
+    <Content Include="Images\building31_copy.jpg" />
+    <Content Include="Images\building32.jpg" />
+    <Content Include="Images\building32_copy.jpg" />
+    <Content Include="Images\building33.jpg" />
+    <Content Include="Images\building33_copy.jpg" />
+    <Content Include="Images\building34.jpg" />
+    <Content Include="Images\building34_copy.jpg" />
+    <Content Include="Images\buttons.png" />
+    <Content Include="Images\buttons2.png" />
+    <Content Include="Images\Calculate_New.jpg" />
+    <Content Include="Images\Camera.png" />
+    <Content Include="Images\Cancel.png" />
+    <Content Include="Images\Cancel01.png" />
+    <Content Include="Images\car_full.png" />
+    <Content Include="Images\Change_New.jpg" />
+    <Content Include="Images\ChangPass.jpg" />
+    <Content Include="Images\ChangPwd_New.jpg" />
+    <Content Include="Images\check.gif" />
+    <Content Include="Images\checkupdated.jpg" />
+    <Content Include="Images\chtab%28f%291.png" />
+    <Content Include="Images\chtab%28f%292.png" />
+    <Content Include="Images\chtab%28f%293.png" />
+    <Content Include="Images\chtab%28f%294.png" />
+    <Content Include="Images\chtab%28f%295.png" />
+    <Content Include="Images\chtab1.png" />
+    <Content Include="Images\chtab2.png" />
+    <Content Include="Images\chtab3.png" />
+    <Content Include="Images\chtab4.png" />
+    <Content Include="Images\chtab5.png" />
+    <Content Include="Images\clock.png" />
+    <Content Include="Images\Close.png" />
+    <Content Include="Images\Close_New.jpg" />
+    <Content Include="Images\ConButton.png" />
+    <Content Include="Images\Confirm_New.jpg" />
+    <Content Include="Images\ContentApplicantWelcome.jpg" />
+    <Content Include="Images\ContentUpld.png" />
+    <Content Include="Images\Content_3-steps.jpg" />
+    <Content Include="Images\Content_AddProperty.jpg" />
+    <Content Include="Images\Content_ApplicationStatus.jpg" />
+    <Content Include="Images\Content_ApplyOnline.jpg" />
+    <Content Include="Images\content_bg.gif" />
+    <Content Include="Images\Content_ChangePass.jpg" />
+    <Content Include="Images\Content_chngpswd.png" />
+    <Content Include="Images\Content_dak.jpg" />
+    <Content Include="Images\Content_enquiry.jpg" />
+    <Content Include="Images\Content_Help.jpg" />
+    <Content Include="Images\Content_HelpMain.jpg" />
+    <Content Include="Images\Content_MainHelp.jpg" />
+    <Content Include="Images\Content_NextLevel.jpg" />
+    <Content Include="Images\Content_OnlineApplicationSystem.jpg" />
+    <Content Include="Images\Content_print-icon.gif" />
+    <Content Include="Images\Content_PrintForm.jpg" />
+    <Content Include="Images\Content_Profile.jpg" />
+    <Content Include="Images\Content_Property.jpg" />
+    <Content Include="Images\Content_rpts.jpg" />
+    <Content Include="Images\Content_UpdateProfile.jpg" />
+    <Content Include="Images\Content_upload.jpg" />
+    <Content Include="Images\Continue.jpg" />
+    <Content Include="Images\Conversion.png" />
+    <Content Include="Images\Conversion_New.jpg" />
+    <Content Include="Images\cross_icon.jpg" />
+    <Content Include="Images\CurStatus.jpg" />
+    <Content Include="Images\dak_content2.png" />
+    <Content Include="Images\DAK_New.png" />
+    <Content Include="Images\dak_new1.jpg" />
+    <Content Include="Images\Digital_India.png" />
+    <Content Include="Images\Digital_India_Logo.jpg" />
+    <Content Include="Images\dish_list_bg.png" />
+    <Content Include="Images\downloadpdf.png" />
+    <Content Include="Images\echallan.png" />
+    <Content Include="Images\edharti-geo.png" />
+    <Content Include="Images\eDharti-MIS-Logo.png" />
+    <Content Include="Images\eDharti-New-1.png" />
+    <Content Include="Images\eDharti.jpg" />
+    <Content Include="Images\eDharti.png" />
+    <Content Include="Images\edharti1.jpg" />
+    <Content Include="Images\edhartifooterpdflogo.jpg" />
+    <Content Include="Images\eDhartiLogo.jpg" />
+    <Content Include="Images\eDhartiLogo11.png" />
+    <Content Include="Images\eDharti_old.png" />
+    <Content Include="Images\edit_clear.png" />
+    <Content Include="Images\Edit_New.jpg" />
+    <Content Include="Images\Elephant.png" />
+    <Content Include="Images\Email_New.jpg" />
+    <Content Include="Images\emb3_new.gif" />
+    <Content Include="Images\emblem-black.gif" />
+    <Content Include="Images\emblem-black.JPG" />
+    <Content Include="Images\Emblem.png" />
+    <Content Include="Images\enquiry.jpg" />
+    <Content Include="Images\ereceipt.png" />
+    <Content Include="Images\f2.png" />
+    <Content Include="Images\FinalizeApp.png" />
+    <Content Include="Images\final_logo.jpg" />
+    <Content Include="Images\footer_bg.gif" />
+    <Content Include="Images\forward.png" />
+    <Content Include="Images\Gift.png" />
+    <Content Include="Images\GiftPermission_New.jpg" />
+    <Content Include="Images\go_icon.gif" />
+    <Content Include="Images\green_backg3.jpg" />
+    <Content Include="Images\Green_circle.png" />
+    <Content Include="Images\Heading_ApplyOnline.jpg" />
+    <Content Include="Images\head_final1.png" />
+    <Content Include="Images\head_final1_new.png" />
+    <Content Include="Images\head_final2.png" />
+    <Content Include="Images\Help.jpg" />
+    <Content Include="Images\help_desk_logo.png" />
+    <Content Include="Images\Home.png" />
+    <Content Include="Images\Home_New.png" />
+    <Content Include="Images\house-plan.jpeg" />
+    <Content Include="Images\IFC.jpg" />
+    <Content Include="Images\ImageCurStatus.jpg" />
+    <Content Include="Images\ImagePprint.jpg" />
+    <Content Include="Images\img_sml.jpg" />
+    <Content Include="Images\link.jpg" />
+    <Content Include="Images\LmisLogo.jpg" />
+    <Content Include="Images\LMISNEWLOGO.JPG" />
+    <Content Include="Images\loading.gif" />
+    <Content Include="Images\LoginLock.gif" />
+    <Content Include="Images\Login_New.jpg" />
+    <Content Include="Images\Logout.jpg" />
+    <Content Include="Images\logout1.jpg" />
+    <Content Include="Images\Logout_New.jpg" />
+    <Content Include="Images\mobile.png" />
+    <Content Include="Images\Mor.png" />
+    <Content Include="Images\Mortgage_New.jpg" />
+    <Content Include="Images\mouseovernext.png" />
+    <Content Include="Images\mouseoverprev.png" />
+    <Content Include="Images\Mut.png" />
+    <Content Include="Images\Mutation_New.jpg" />
+    <Content Include="Images\nature.jpg" />
+    <Content Include="Images\nature.png" />
+    <Content Include="Images\NewItem.gif" />
+    <Content Include="Images\NextLevel.jpg" />
+    <Content Include="Images\Next_New.jpg" />
+    <Content Include="Images\next_new.png" />
+    <Content Include="Images\nic.gif" />
+    <Content Include="Images\nic.jpg" />
+    <Content Include="Images\nicfooterpdflogo.jpg" />
+    <Content Include="Images\NICLogo.JPG" />
+    <Content Include="Images\NIC_Logo_New.png" />
+    <Content Include="Images\No.jpg" />
+    <Content Include="Images\no_img.gif" />
+    <Content Include="Images\nxt.png" />
+    <Content Include="Images\nxtIns.png" />
+    <Content Include="Images\OK.png" />
+    <Content Include="Images\Ok_New.jpg" />
+    <Content Include="Images\OK_New.png" />
+    <Content Include="Images\online_pay.png" />
+    <Content Include="Images\oval-label-extralarge.jpg" />
+    <Content Include="Images\pagenotfound.png" />
+    <Content Include="Images\passwrdset.jpg" />
+    <Content Include="Images\Pay_New.jpg" />
+    <Content Include="Images\pdfdownload.png" />
+    <Content Include="Images\personalselected.png" />
+    <Content Include="Images\pinkbg.jpg" />
+    <Content Include="Images\pinkbg.png" />
+    <Content Include="Images\placeholder.gif" />
+    <Content Include="Images\previous.png" />
+    <Content Include="Images\Previous_New.jpg" />
+    <Content Include="Images\print.gif" />
+    <Content Include="Images\print.png" />
+    <Content Include="Images\printfinalize.png" />
+    <Content Include="Images\PrintForm.jpg" />
+    <Content Include="Images\print_final.png" />
+    <Content Include="Images\print_green.png" />
+    <Content Include="Images\print_icon.png" />
+    <Content Include="Images\Print_New.png" />
+    <Content Include="Images\proceed.png" />
+    <Content Include="Images\Proceed_New.jpg" />
+    <Content Include="Images\process.gif" />
+    <Content Include="Images\profile.jpg" />
+    <Content Include="Images\PropertyCard_New.jpg" />
+    <Content Include="Images\PropertyCertificate_New.jpg" />
+    <Content Include="Images\propertyselected.png" />
+    <Content Include="Images\PropStatus.png" />
+    <Content Include="Images\quit.png" />
+    <Content Include="Images\Reactivate_New.jpg" />
+    <Content Include="Images\Receipt_New.jpg" />
+    <Content Include="Images\Receive_New.jpg" />
+    <Content Include="Images\Red_circle.png" />
+    <Content Include="Images\refresh2.png" />
+    <Content Include="Images\Reset_New.jpg" />
+    <Content Include="Images\round-header.jpg" />
+    <Content Include="Images\rounded-footer.jpg" />
+    <Content Include="Images\rpts.jpg" />
+    <Content Include="Images\rupees1.png" />
+    <Content Include="Images\SalePermission_New.jpg" />
+    <Content Include="Images\Saleprm.png" />
+    <Content Include="Images\sav2.png" />
+    <Content Include="Images\savedraft.png" />
+    <Content Include="Images\save_icon.png" />
+    <Content Include="Images\Science.png" />
+    <Content Include="Images\securityselected.png" />
+    <Content Include="Images\SendEmail_New.jpg" />
+    <Content Include="Images\send_icon.png" />
+    <Content Include="Images\SetPwd_New.jpg" />
+    <Content Include="Images\ship.png" />
+    <Content Include="Images\side_column_bottom.png" />
+    <Content Include="Images\side_column_top.png" />
+    <Content Include="Images\signinmouse.png" />
+    <Content Include="Images\signin_new.png" />
+    <Content Include="Images\SMS_New.jpg" />
+    <Content Include="Images\Sub.png" />
+    <Content Include="Images\Sub1.png" />
+    <Content Include="Images\SubButton.png" />
+    <Content Include="Images\Subhome.png" />
+    <Content Include="Images\submit.png" />
+    <Content Include="Images\SubmitAppLDO_OK.png" />
+    <Content Include="Images\submitmouse.png" />
+    <Content Include="Images\submitToLdo.png" />
+    <Content Include="Images\Submit_New.jpg" />
+    <Content Include="Images\Substitution_New.jpg" />
+    <Content Include="Images\Subtab%28f%291.png" />
+    <Content Include="Images\Subtab%28f%292.png" />
+    <Content Include="Images\Subtab%28f%293.png" />
+    <Content Include="Images\Subtab%28f%294.png" />
+    <Content Include="Images\Subtab%28f%295.png" />
+    <Content Include="Images\Subtab%28f%296.png" />
+    <Content Include="Images\Subtab1.png" />
+    <Content Include="Images\Subtab2.png" />
+    <Content Include="Images\Subtab3.png" />
+    <Content Include="Images\Subtab4.png" />
+    <Content Include="Images\Subtab5.png" />
+    <Content Include="Images\Subtab6.png" />
+    <Content Include="Images\Symbols-Warning-icon.png" />
+    <Content Include="Images\System.Web.gif" />
+    <Content Include="Images\tab1.png" />
+    <Content Include="Images\tab2.jpg" />
+    <Content Include="Images\tab2.png" />
+    <Content Include="Images\tab3.png" />
+    <Content Include="Images\tab4.png" />
+    <Content Include="Images\tab5.png" />
+    <Content Include="Images\tab6.png" />
+    <Content Include="Images\tabaplicant.jpg" />
+    <Content Include="Images\TabApplicant_New.png" />
+    <Content Include="Images\tabchangecon.jpg" />
+    <Content Include="Images\tabchangedoc.jpg" />
+    <Content Include="Images\tabchangedues.jpg" />
+    <Content Include="Images\tabchangelease.jpg" />
+    <Content Include="Images\tabchangeprop.jpg" />
+    <Content Include="Images\tabchangeterms.png" />
+    <Content Include="Images\tabchangeupload.jpg" />
+    <Content Include="Images\tabpersonal.jpg" />
+    <Content Include="Images\TabPersonal_New.png" />
+    <Content Include="Images\tabproperty.jpg" />
+    <Content Include="Images\TabProperty_New.png" />
+    <Content Include="Images\tabsecurity.jpg" />
+    <Content Include="Images\TabSecurity_New.png" />
+    <Content Include="Images\tabupload.jpg" />
+    <Content Include="Images\templatemo_container_inner.jpg" />
+    <Content Include="Images\templatemo_container_outter.jpg" />
+    <Content Include="Images\templatemo_content_bottom.jpg" />
+    <Content Include="Images\templatemo_content_middle.gif" />
+    <Content Include="Images\templatemo_content_middle.jpg" />
+    <Content Include="Images\templatemo_content_middle.png" />
+    <Content Include="Images\templatemo_content_top_finally.jpg" />
+    <Content Include="Images\templatemo_h2_bg.png" />
+    <Content Include="Images\templatemo_list_icon_bg.jpg" />
+    <Content Include="Images\templatemo_menu_bg_new_latest.gif" />
+    <Content Include="Images\templatemo_readmore_bg.png" />
+    <Content Include="Images\templatemo_readmore_bg_new.png" />
+    <Content Include="Images\title.png" />
+    <Content Include="Images\twitter-bird.png" />
+    <Content Include="Images\Update.png" />
+    <Content Include="Images\Update_New.jpg" />
+    <Content Include="Images\upload.jpg" />
+    <Content Include="Images\upload.png" />
+    <Content Include="Images\upload_new.png" />
+    <Content Include="Images\viewdraft.png" />
+    <Content Include="Images\view_icon.png" />
+    <Content Include="Images\view_new.png" />
+    <Content Include="Images\Yes.png" />
+    <Content Include="Slideshow.aspx" />
+    <Content Include="Web.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Slideshow.aspx.cs">
+      <DependentUpon>Slideshow.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Slideshow.aspx.designer.cs">
+      <DependentUpon>Slideshow.aspx</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="packages.config" />
+    <None Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+    <None Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </None>
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>53500</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>https://localhost:44397/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <Target Name="EnsureNuGetPackageBuildImports" BeforeTargets="PrepareForBuild">
+    <PropertyGroup>
+      <ErrorText>This project references NuGet package(s) that are missing on this computer. Use NuGet Package Restore to download them.  For more information, see http://go.microsoft.com/fwlink/?LinkID=322105. The missing file is {0}.</ErrorText>
+    </PropertyGroup>
+    <Error Condition="!Exists('packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props')" Text="$([System.String]::Format('$(ErrorText)', 'packages\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.2.0.1\build\net46\Microsoft.CodeDom.Providers.DotNetCompilerPlatform.props'))" />
+  </Target>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>
